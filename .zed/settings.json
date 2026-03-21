@@ -3,6 +3,7 @@
     "env": {
       "PATH": "target/debug:$PATH",
       "MANPATH": "$PWD/target/share/man:$MANPATH",
-    },
-  },
+      "CARGO_OFFLINE": "1"
+    }
+  }
 }
