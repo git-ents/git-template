@@ -6,12 +6,22 @@ publish.workspace = true
 license.workspace = true
 description = "Create new Git repositories using other repositories as templates."
 
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "git-template"
+path = "src/main.rs"
+
 [dependencies]
 clap = { workspace = true }
 clap_mangen = { workspace = true }
-gingembre = { git = "https://github.com/bearcove/dodeca", version = "0.6.1" }
 git-vendor = { version = "0.2.0", path = "../../../git-vendor/crates/git-vendor" }
 git2 = { workspace = true }
+globset = { workspace = true }
+minijinja = { workspace = true }
+serde = { workspace = true }
+toml = { workspace = true }
 
 [dev-dependencies]
 assert_cmd = "2"
