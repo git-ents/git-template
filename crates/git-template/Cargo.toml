@@ -9,6 +9,7 @@ description = "Create new Git repositories using other repositories as templates
 [dependencies]
 clap = { workspace = true }
 clap_mangen = { workspace = true }
+gingembre = { git = "https://github.com/bearcove/dodeca", version = "0.6.1" }
 git-vendor = { version = "0.2.0", path = "../../../git-vendor/crates/git-vendor" }
 git2 = { workspace = true }
 
